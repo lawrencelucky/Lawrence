@@ -1,0 +1,5 @@
+Full Name: Lawrence Lucky
+Email Address: lawrencelucky1999@gmail.com
+Slack Username: Lawrence
+Track: Frontend Development
+Courses: HTML, CSS, JavaScript.
