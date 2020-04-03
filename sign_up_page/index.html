@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Piggyvest | Clone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/piggyvest-logo.0b78a8fa.svg" alt="icon" />
+    </header>
+
+    <section class="form-section">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Create a Secure Account</h2>
+          <p>Welcome to the future Savings & Investment</p>
+        </div>
+        <form class="form" action="#">
+          <label for="fullName">Full Name</label>
+          <input
+            type="text"
+            name="full-name"
+            id="fullName"
+            placeholder="Full Name"
+          />
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="full-e-mail"
+            id="email"
+            placeholder="Email Address"
+          />
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="tel"
+            name="phone-number"
+            id="phoneNumber"
+            placeholder="Phone Number"
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="pass"
+            id="password"
+            placeholder="Password"
+          />
+          <label for="ref">Referral Phone or Promo Code (Optional)</label>
+          <input
+            type="text"
+            name="referral"
+            id="ref"
+            placeholder="Referral Phone or Promo  Code"
+          />
+          <label for="hear">How did you hear about us? (Optional)</label>
+          <select name="hearing" id="hear">
+            <option value="selected" selected>Click to select</option>
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="instagram">Instagram</option>
+            <option value="friend-referral"
+              >Friend/Family/Co-worker Referral</option
+            >
+            <option value="google-search">Google Search</option>
+            <option value="google-playstore">Google Playstore</option>
+            <option value="online-blog">Online Blog</option>
+            <option value="local-news">Local Newspaper</option>
+            <option value="event">Event</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="submit" value="Create Account" />
+        </form>
+      </div>
+
+      <a href="#">Already have an account? Log In</a>
+    </section>
+  </body>
+</html>
