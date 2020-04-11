@@ -162,3 +162,41 @@ input[type="submit"]:hover {
 .form-section a:hover {
   color: #747a86;
 }
+
+@media only screen and (max-width: 470px) {
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="submit"],
+  select {
+    width: 30rem;
+  }
+
+  .form-header h2 {
+    font-size: 2rem;
+  }
+
+  .form-header p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="submit"],
+  select {
+    width: 26rem;
+  }
+
+  .form-header h2 {
+    font-size: 2rem;
+  }
+
+  .form-header p {
+    font-size: 1rem;
+  }
+}
