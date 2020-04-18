@@ -1,0 +1,296 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #9e9e9e;
+  /* background: rgb(84, 84, 84);
+  background: linear-gradient(
+    156deg,
+    rgba(84, 84, 84, 1) 15%,
+    rgba(45, 45, 45, 1) 35%
+  ); */
+  background-color: rgba(45, 45, 45, 0.8799894957983193);
+  min-height: 100vh;
+  margin: 5rem 10rem;
+  letter-spacing: 1px;
+}
+
+.header {
+  text-transform: lowercase;
+  /* text-align: center; */
+  font-size: 3.5rem;
+}
+
+.header span {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.img-bio-container {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  margin-right: 10rem;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border: 8px solid #ffffff;
+}
+
+.bio-content {
+  width: 50rem;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.title:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.value {
+  font-size: 2rem;
+  color: #cfcfcf;
+  font-weight: 600 !important;
+}
+
+.value:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.section-about-me {
+  margin-top: 7rem;
+}
+
+.about-me-content {
+  margin-top: 4rem;
+  color: #cfcfcf;
+  font-size: 1.8rem;
+  width: 80rem;
+}
+
+.twitter-link {
+  color: #00acee;
+  text-decoration: none;
+}
+
+.section-contact-me {
+  margin-top: 7rem;
+}
+
+.svg-form-container {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.svg {
+  width: 45rem;
+}
+
+.right-section {
+  margin-left: 5rem;
+}
+
+.name-email-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60rem;
+  margin-bottom: 4rem;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  color: #cfcfcf;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+}
+
+input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 1rem 0.5rem;
+  width: 25rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.message {
+  width: 60rem;
+  display: block;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  margin-top: 5rem;
+  border: 1px solid #cfcfcf;
+  width: 20rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #cfcfcf;
+  border: 5px solid #3f3d55;
+  color: #3f3d55;
+}
+
+@media all and (max-width: 425px) {
+  body {
+    margin: 5rem 2rem !important;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center !important;
+    margin-right: 0 !important;
+  }
+
+  .about-me-content {
+    width: 45rem !important;
+  }
+
+  .content-container {
+    width: 45rem !important;
+  }
+
+  .svg-form-container {
+    align-items: flex-start !important;
+  }
+
+  .name-email-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    width: 30rem !important;
+  }
+
+  #user-name {
+    margin-bottom: 4rem;
+  }
+
+  .message {
+    width: 40rem !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+
+  body {
+    margin: 5rem;
+  }
+
+  .img-bio-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60rem;
+  }
+
+  .img-container {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .about-me-content {
+    width: 70rem;
+  }
+
+  .svg-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section {
+    margin-bottom: 4rem;
+  }
+
+  .right-section {
+    margin: 0 !important;
+  }
+}
+
+@media all and (max-width: 980px) {
+  html {
+    font-size: 56%;
+  }
+
+  .svg {
+    width: 20rem;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .svg {
+    width: 37rem;
+  }
+
+  input {
+    width: 22rem;
+  }
+
+  .message {
+    width: 50rem;
+  }
+
+  .name-email-container {
+    width: 50rem !important;
+  }
+}
