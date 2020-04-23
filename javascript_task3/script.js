@@ -1,6 +1,8 @@
 let yugiho = function (num) {
   let arr = [];
   for (let i = 1; i <= num; i++) {
+    arr.push(i);
+
     if (i % 2 === 0) {
       arr.pop(i);
       let yu = i.toString();
@@ -48,8 +50,6 @@ let yugiho = function (num) {
       let replaced = yuGiOh.replace(yuGiOh, "yu-gi-oh");
       arr.push(replaced);
     }
-
-    arr.push(i);
   }
 
   console.log(arr);
