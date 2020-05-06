@@ -160,6 +160,22 @@ function detectAnswer() {
       answerThreeField.classList.add('wrong');
     }
   }
+
+  if (
+    answerOne.checked === true ||
+    answerTwo.checked === true ||
+    answerThree.checked === true
+  ) {
+    if (labelOneField.textContent === questions[navigate].answer) {
+      answerOneField.classList.add('correct');
+    }
+    if (labelTwoField.textContent === questions[navigate].answer) {
+      answerTwoField.classList.add('correct');
+    }
+    if (labelThreeField.textContent === questions[navigate].answer) {
+      answerThreeField.classList.add('correct');
+    }
+  }
 }
 
 function submitQuiz(e) {
